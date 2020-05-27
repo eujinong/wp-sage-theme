@@ -1,0 +1,23 @@
+.video-player-block {
+  padding-top: 66px;
+  padding-bottom: 83px;
+  background-color: $white;
+  @include media-breakpoint-down('md') {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .title {
+    margin-bottom: 67px;
+  }
+  .embed-responsive {
+    @include media-breakpoint-up('lg') {
+      height: 561px;
+    }
+    @include media-breakpoint-down('md') {
+      height: 420px;
+    }
+    @include media-breakpoint-down('sm') {
+      height: 320px;
+    }
+  }
+}

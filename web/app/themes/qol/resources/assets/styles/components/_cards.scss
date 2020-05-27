@@ -1,0 +1,170 @@
+.card {
+  &.card-resource {
+    margin-bottom: 40px;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .post-header {
+      position: relative;
+      margin-bottom: 13px;
+      .post-image {
+        cursor: pointer;
+        border-bottom-right-radius: 50px;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 67.25%;
+      }
+      .btn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 13px 24px;
+      }
+    }
+    .title {
+      cursor: pointer;
+      font-size: 20px;
+      // @include heading-font();
+      font-family: $font-family-pharma;
+      line-height: 28px;
+      color: $gray-800;
+    }
+  }
+  &.card-form {
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    background: $white;
+    .card-body {
+      padding: 35px 32px;
+    }
+  }
+  &.card-qol {
+    box-shadow: $box-shadow;
+    background: $white;
+    border-radius: 0;
+    margin-bottom: 24px;
+    .card-body {
+      padding: 33px 44px;
+      .title {
+        margin-bottom: 27px;
+      }
+      .subtitle {
+        font-size: 20px;
+        // @include heading-font();
+        font-family: $font-family-pharma;
+        margin-bottom: 28px;
+        color: rgba($black, 0.87);
+      }
+      .content {
+        color: rgba($black, 0.87);
+        font-size: 14px;
+        margin-bottom: 42px;
+      }
+      .btn {
+        margin-bottom: 14px;
+      }
+    }
+  }
+  &.card-file-info {
+    background: $white;
+    box-shadow: $box-shadow;
+    .card-body {
+      padding: 37px 42px;
+      h6 {
+        margin-bottom: 9px;
+      }
+      .file-info {
+        font-size: 14px;
+        color: rgba($black, 0.87);
+        margin-bottom: 36px;
+      }
+      .btn {
+        min-width: 146px;
+      }
+    }
+  }
+  &.card-post {
+    margin-bottom: 40px;
+    box-shadow: 0 1px 2px rgba($black, 0.15);
+    background-color: $white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    .post-image {
+      background-size: cover;
+      background-position: center;
+      padding-bottom: 58%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      .btn {
+        position: absolute;
+        left: 0;
+        top: 16px;
+        min-width: 95px;
+      }
+    }
+    .card-body {
+      width: 100%;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-breakpoint-down('md') {
+        flex-wrap: wrap;
+        .post-more {
+          width: 100%;
+          .btn {
+            float: right;
+            margin-top: 24px;
+          }
+        }
+      }
+      .post-info {
+        @include media-breakpoint-up('lg') {
+          margin-right: 30px;
+        }
+        .post-title {
+          color: $primary;
+          font-size: 20px;
+          line-height: 24px;
+          // @include heading-font();
+          font-family: $font-family-pharma;
+          margin-bottom: 14px;
+        }
+        .post-date {
+          font-size: 14px;
+          font-weight: 600;
+          color: rgba($black, 0.87);
+        }
+      }
+      .btn {
+        min-width: 104px;
+      }
+    }
+  }
+  &.card-approach {
+    margin-bottom: 16px;
+    .icon {
+      margin-right: 24px;
+    }
+    .approach-title {
+      font-size: 25px;
+      // @include heading-font();
+      font-family: $font-family-pharma;
+      color: $primary;
+    }
+    .approach-description {
+      margin-top: 20px;
+      font-size: 14px;
+      max-width: 326px;
+      @include media-breakpoint-down('md') {
+        max-width: 100%;
+      }
+      color: rgba($black, 0.87);
+    }
+  }
+}

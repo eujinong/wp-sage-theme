@@ -1,0 +1,36 @@
+.btn {
+  padding-top: $btn-padding-y + 3px;
+  text-transform: uppercase;
+  // min-width: 161px;
+}
+
+.btn-success {
+  color: $white;
+}
+
+.btn-selected {
+  display: flex;
+  justify-content: space-between;
+  min-width: 142px;
+  font-size: 18px;
+  // @include heading-font();
+  font-family: $font-family-dosis;
+  padding: 11px 12px;
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  &.btn-outline-success {
+    .icon-plus-white {
+      display: none;
+    }
+    &:hover {
+      .icon-plus-white {
+        display: block !important;
+      }
+      .icon-plus-green {
+        display: none;
+      }
+    }
+  }
+}

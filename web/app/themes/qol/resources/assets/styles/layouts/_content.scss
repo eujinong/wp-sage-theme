@@ -1,0 +1,14 @@
+.site {
+  overflow-x: hidden;
+  flex-direction: column;
+}
+.site-content {
+  position: relative;
+  z-index: $header-z-index - 1;
+}
+
+.navigation-opened {
+  .site-content {
+    display: none;
+  }
+}

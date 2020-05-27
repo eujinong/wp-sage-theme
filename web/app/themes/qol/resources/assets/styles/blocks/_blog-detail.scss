@@ -1,0 +1,58 @@
+.blog-detail-block {
+  padding-bottom: 64px;
+  background-color: $white;
+  .featured-image {
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 50px;
+    padding-bottom: 31%;
+    width: 100%;
+    margin-bottom: 61px;
+    @include media-breakpoint-down('md') {
+      padding-bottom: 50%;
+    }
+  }
+  .content {
+    max-width: 915px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    color: rgba($black, 0.87);
+    blockquote {
+      color: $primary;
+      // @include heading-font();
+      font-family: $font-family-pharma;
+      line-height: 32px;
+      padding-left: 41px;
+      padding-top: 13px;
+      padding-bottom: 14px;
+      margin-top: 33px;
+      margin-bottom: 51px;
+      border-left: 1px solid $primary;
+      @include media-breakpoint-down('md') {
+        padding-left: 20px;
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 40px;
+      margin-bottom: 9px;
+      height: 100%;
+    }
+    .text-center {
+      margin-bottom: 41px;
+      color: rgba($gray-700, 0.87);
+      font-size: 14px;
+    }
+  }
+  .other-articles {
+    margin-top: 70px;
+    border-top: 1px solid $primary;
+    padding-top: 61px;
+    .title {
+      font-size: 36px;
+      margin-bottom: 75px;
+    }
+  }
+}

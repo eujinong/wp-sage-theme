@@ -1,0 +1,41 @@
+.page-header-block {
+  display: flex;
+  align-items: center;
+  height: 233px;
+  background-color: $light;
+  @include media-breakpoint-down('md') {
+    height: auto;
+    padding: 30px 0;
+  }
+  .back-action {
+    margin-bottom: 38px;
+  }
+  .title {
+    font-size: 48px;
+    margin-bottom: 0;
+    @include media-breakpoint-down('md') {
+      font-size: 34px;
+    }
+  }
+  .filter-action {
+    max-width: 357px;
+    width: 100%;
+    form {
+      margin-top: 36px;
+    }
+  }
+  &.detail-header-block {
+    height: 380px;
+    .btn {
+      border-bottom-right-radius: 10px !important;
+      margin-bottom: 10px;
+      min-width: 95px;
+    }
+    .post-date {
+      margin-top: 13px;
+      font-size: 14px;
+      color: rgba($black, 0.87);
+      font-weight: 600;
+    }
+  }
+}

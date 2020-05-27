@@ -1,0 +1,131 @@
+.woocommerce {
+  .cart-empty {
+    text-align: center;
+  }
+
+  .col-1, .col-2 {
+    max-width: none;
+  }
+
+  .woocommerce-input-wrapper {
+    width: 100%;
+  }
+
+  .input-text {
+    border: 1px solid #ccc;
+  }
+
+  .input-text,
+  .button {
+    line-height: 1.4;
+    padding: .5rem;
+  }
+
+  .button {
+    background: #3a3e41 !important;
+    color: #fff !important;
+  }
+
+  input[name="coupon_code"] {
+    min-width: 200px;
+  }
+}
+
+.woocommerce-checkout {
+  header time.updated,
+  header .byline {
+    display: none;
+  }
+}
+
+.woocommerce-cart-form {
+  .product-thumbnail, .product-remove {
+    display: none;
+  }
+}
+
+a.shipping-calculator-button {
+  display: none !important;
+}
+
+body.single-product {
+  .product_meta {
+    display: none;
+  }
+
+  .summary .price,
+  .woocommerce-Tabs-panel h2 {
+    display: none;
+  }
+
+  form.cart {
+    margin-top: 1em;
+  }
+
+  .woocommerce-cart-form {
+    .coupon {
+      display: none;
+    }
+
+    th.product-subtotal,
+    td.product-subtotal {
+      display: none;
+    }
+  }
+
+  .return-to-shop {
+    display: none;
+  }
+
+  .woocommerce .cart_totals {
+    clear: both;
+    width: 100% !important;
+
+    h2,
+    .shipping,
+    .order-total {
+      display: none;
+    }
+
+    .wc-proceed-to-checkout {
+      float: right;
+    }
+
+    .shop_table {
+      width: 100% !important;
+    }
+  }
+}
+
+.stripe-card-group {
+  min-width: 230px;
+}
+
+.wc-stripe-elements-field {
+  min-width: 100px;
+}
+
+.stripe-card-group,
+.wc-stripe-elements-field {
+  margin-left: 1em;
+}
+
+.woo_discount_rules_table {
+  border-collapse: collapse;
+  width: 100%;
+
+  th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .wdr_tr_head {
+    background-color: #eee;
+
+    td {
+      background-color: #eee;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

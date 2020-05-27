@@ -1,0 +1,17 @@
+.team-block {
+  padding: 108px 0;
+  background-color: $light;
+  @include media-breakpoint-down('md') {
+    padding: 50px 0;
+  }
+  .title {
+    font-size: 48px;
+    margin-bottom: 36px;
+  }
+  .content {
+    margin-bottom: 50px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: rgba($black, 0.87);
+  }
+}

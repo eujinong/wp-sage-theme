@@ -1,0 +1,29 @@
+.story-block {
+  padding: 91px 0;
+  background-color: $white;
+  @include media-breakpoint-down('md') {
+    padding: 45px 0;
+  }
+  .main {
+    max-width: 910px;
+    margin: 0 auto;
+    .title {
+      font-size: 48px;
+      margin-bottom: 27px;
+    }
+    .content {
+      font-size: 14px;
+      color: rgba($black, 0.87);
+      img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 16px;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        color: rgba($primary, 0.87);
+        // @include heading-font();
+        font-family: $font-family-pharma;
+      }
+    }
+  }
+}

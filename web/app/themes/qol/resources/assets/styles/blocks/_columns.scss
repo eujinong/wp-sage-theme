@@ -1,0 +1,256 @@
+.block {
+  &.two-column-block {
+    background-color: $white;
+    display: flex;
+
+    @include media-breakpoint-down('md') {
+      flex-direction: column;
+    }
+
+    .column-block-item {
+      @include media-breakpoint-up('lg') {
+        flex: 1;
+      }
+
+      @include media-breakpoint-down('md') {
+        width: 100%;
+      }
+
+      .info {
+        @include media-breakpoint-up('lg') {
+          padding: 106px 0 64px 0;
+          margin-left: 80px;
+          width: 400px;
+        }
+
+        @include media-breakpoint-up('xl') {
+          margin-left: 114px;
+          width: 487px;
+        }
+
+        @include media-breakpoint-down('md') {
+          max-width: map-get($container-max-widths, 'md');
+          margin: 53px auto 42px;
+          padding: 0 $container-gutter-width;
+        }
+
+        @include media-breakpoint-down('sm') {
+          max-width: map-get($container-max-widths, 'sm');
+        }
+
+        .title {
+          @include media-breakpoint-down('md') {
+            font-size: 40px;
+          }
+        }
+
+        .subtitle {
+          // @include heading-font();
+          font-family: $font-family-pharma;
+          font-size: 20px;
+          margin-bottom: 24px;
+        }
+        .content {
+          font-size: 14px;
+          letter-spacing: 0.44px;
+          line-height: 24px;
+        }
+      }
+
+      .featured-image {
+        background-size: cover;
+        background-position: center;
+        background-color: '#F5F4F0';
+
+        @include media-breakpoint-up('lg') {
+          height: 100%;
+          min-height: 492px;
+        }
+
+        @include media-breakpoint-down('md') {
+          height: 100%;
+          min-height: 492px;
+        }
+
+        @include media-breakpoint-down('sm') {
+          min-height: 0;
+          padding-bottom: 65%;
+        }
+
+      }
+    }
+  }
+
+  &.column-reverse-block {
+    @include media-breakpoint-up('lg') {
+      flex-direction: row-reverse;
+    }
+    .column-block-item {
+      .info {
+        @include media-breakpoint-up('lg') {
+          margin-left: auto;
+          margin-right: 80px;
+        }
+
+        @include media-breakpoint-up('xl') {
+          margin-left: auto;
+          margin-right: 94px;
+        }
+      }
+    }
+  }
+  &.hexagon-block {
+    padding: 51px 0;
+    background: url('../img/backgrounds/hexagon.png');
+    background-repeat: repeat;
+    .content {
+      margin-bottom: 33px;
+    }
+  }
+  &.one-column-block {
+    background-color: $light;
+    background-image: url('../img/backgrounds/u-shape.png');
+    background-repeat: no-repeat;
+    @include media-breakpoint-up('lg') {
+      padding: 57px 0;
+      background-size: 422px 927px;
+      background-position: -219px 64px;
+    }
+    @include media-breakpoint-down('md') {
+      padding: 40px 0;
+      background-size: 308px 677px;
+      background-position: -188px 48px;
+    }
+    .service-panel {
+      margin: 70px 0;
+      background-color: $white;
+      padding-top: 48px;
+      padding-bottom: 32px;
+      z-index: 1000;
+      .services {
+        max-width: 768px;
+        padding: 0 20px;
+        margin-left: auto;
+        margin-right: auto;
+        .service {
+          max-width: 196px;
+          margin: 0 auto;
+          .service-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 21px;
+          }
+          .service-title {
+            margin-bottom: 16px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .sub-container {
+      max-width: 768px;
+      padding: 0 20px;
+      margin-left: auto;
+      margin-right: auto;
+      .title {
+        margin-bottom: 24px;
+      }
+      .subtitle {
+        // @include heading-font();
+        font-family: $font-family-pharma;
+        opacity: 0.87;
+        font-size: 20px;
+        margin-bottom: 21px;
+      }
+      .sub-content {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down('md') {
+          flex-wrap: wrap;
+          .sub-image {
+            margin-right: 0 !important;
+            margin-bottom: 16px;
+          }
+        }
+        .sub-image {
+          img {
+            border-bottom-right-radius: 50px;
+            width: 100%;
+          }
+          min-width: 160px;
+          height: 160px;
+          margin-right: 36px;
+        }
+        .sub-title {
+          margin-bottom: 37px;
+        }
+        .sub-user {
+          font-size: 14px;
+          opacity: 0.87;
+        }
+      }
+      .content {
+        font-size: $font-size-base;
+        ul {
+          padding-left: 30px;
+          li {
+            margin-bottom: 16px;
+          }
+        }
+      }
+      .button-link {
+        margin-bottom: 40px;
+      }
+    }
+    &.no-background-block {
+      background-image: none !important;
+      .sub-container {
+        max-width: 945px;
+      }
+      .title {
+        margin-bottom: 33px;
+      }
+      .content {
+        font-size: 14px;
+        color: rgba($black, 0.87);
+      }
+    }
+  }
+  &.two-column-contact-block {
+    padding-top: 83px;
+    padding-bottom: 100px;
+    @include media-breakpoint-down('md') {
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
+    .block-title {
+      margin-bottom: 40px;
+    }
+    .sub-title {
+      margin-bottom: 44px;
+    }
+    .contact-items {
+      columns: 2;
+      @include media-breakpoint-down('sm') {
+        columns: 1;
+        .contact-item {
+          width: 100% !important;
+        }
+      }
+      .contact-item {
+        width: 190px;
+        margin-bottom: 44px;
+        display: inline-block;
+        .contact-type {
+          margin-bottom: 9px;
+        }
+        .contact-info {
+          font-size: 14px;
+          color: rgba($black, 0.87);
+        }
+      }
+    }
+  }
+}

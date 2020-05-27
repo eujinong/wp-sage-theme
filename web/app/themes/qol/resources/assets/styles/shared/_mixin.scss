@@ -1,0 +1,9 @@
+@mixin heading-font() {
+  font-family: $font-family-pharma;
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    font-family: $font-family-dosis !important;
+  }
+  @supports (-ms-ime-align:auto) {
+    font-family: $font-family-dosis !important;
+  }
+}

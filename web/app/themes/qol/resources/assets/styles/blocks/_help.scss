@@ -1,0 +1,44 @@
+.help-block {
+  background-position: top;
+  background-size: cover;
+  border-top-left-radius: 50px;
+  padding-top: 148px;
+  padding-bottom: 90px;
+  @include media-breakpoint-down('md') {
+    padding-top: 38px;
+    padding-bottom: 41px;
+    position: relative;
+    background: top 0 right 34%;
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 365px;
+      z-index: 0;
+      background-image: url('../img/backgrounds/hexagon.png') !important;
+      background-repeat: repeat;
+      background-size: contain;
+    }
+    .row {
+      flex-wrap: wrap-reverse;
+      .inner-image {
+        height: 365px;
+      }
+    }
+  }
+  .help-content {
+    position: relative;
+    z-index: 2;
+    .title {
+      margin-bottom: 28px;
+    }
+    .content {
+      font-weight: $font-weight-light;
+    }
+    .arrow-link {
+      margin-top: 35px;
+    }
+  }
+}

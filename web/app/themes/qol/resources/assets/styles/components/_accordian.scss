@@ -1,0 +1,41 @@
+.accordian {
+  box-shadow: $box-shadow;
+  @include media-breakpoint-down('md') {
+    margin-bottom: 30px;
+  }
+  .card-header {
+    height: 75px;
+    cursor: pointer;
+    background-color: $white;
+    font-size: 20px;
+    // @include heading-font();
+    font-family: $font-family-pharma;
+    color: $primary;
+    display: flex;
+    align-items: center;
+    padding: 22px 32px;
+    padding-right: 42px;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid $light;
+    .icon {
+      position: absolute;
+      right: 31px;
+      top: 22px;
+    }
+    &[aria-expanded="true"] {
+      .icon-minus {
+        display: block;
+      }
+      .icon-plus {
+        display: none;
+      }
+    }
+  }
+  .card-body {
+    background-color: $light;
+    color: rgba($black, 0.87);
+    font-size: 14px;
+    border-bottom: 1px solid $border-color;
+  }
+}

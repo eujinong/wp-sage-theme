@@ -1,0 +1,46 @@
+.block {
+  &.products-block {
+    background-color: $light;
+    background-image: url('../img/backgrounds/u-shape.png');
+    background-repeat: no-repeat;
+    @include media-breakpoint-up('lg') {
+      padding: 72px 0;
+      background-size: 422px 928px;
+      background-position: -52px 116px;
+    }
+    @include media-breakpoint-down('md') {
+      padding: 24px 0;
+      background-size: 308px 677px;
+      background-position: -188px 48px;
+    }
+    .product {
+      @include media-breakpoint-up('lg') {
+        padding: 72px 0;
+      }
+      @include media-breakpoint-down('md') {
+        padding: 24px 0;
+      }
+      .featured-image {
+        @include media-breakpoint-up('lg') {
+          margin-left: 40px;
+        }
+        @include media-breakpoint-down('md') {
+          margin-bottom: 36px;
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .title {
+        margin-bottom: 24px;
+        @include media-breakpoint-down('md') {
+          font-size: 40px;
+        }
+      }
+      .content {
+        margin-bottom: 28px;
+      }
+    }
+  }
+}

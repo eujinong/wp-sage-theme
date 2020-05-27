@@ -1,0 +1,9 @@
+.site-header {
+  position: relative;
+  z-index: $header-z-index;
+  background-image: url('../img/backgrounds/hexagon.png');
+}
+
+.navigation-opened {
+  background-image: url('../img/backgrounds/hexagon.png');
+}

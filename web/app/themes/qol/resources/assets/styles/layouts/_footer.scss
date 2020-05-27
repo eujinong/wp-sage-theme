@@ -1,0 +1,143 @@
+.site-footer {
+  position: relative;
+  z-index: $header-z-index;
+  padding-top: 64px;
+  padding-bottom: 52px;
+  background-color: $black;
+  color: $white;
+  .container {
+    position: relative;
+    z-index: 1000;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url('../img/backgrounds/hexagon.png');
+    opacity: 0.8;
+  }
+  h6 {
+    font-size: 28px;
+    // @include heading-font();
+    font-family: $font-family-pharma;
+  }
+  .privacy-terms {
+    margin-top: -150px;
+    margin-bottom: 74px;
+    @include media-breakpoint-down('md') {
+      margin-top: 36px;
+      margin-bottom: 0;
+      div {
+        justify-content: center;
+      }
+    }
+    p {
+      margin-bottom: 11px;
+      font-size: 14px;
+      // @include heading-font();
+      font-family: $font-family-dosis;
+      letter-spacing: 0.39;
+    }
+    a {
+      color: $white;
+      font-size: 14px;
+      // @include heading-font();
+      font-family: $font-family-dosis;
+    }
+  }
+  .brand-logo {
+    .navigation-brand {
+      img {
+        width: 261px;
+        height: 65px;
+      }
+    }
+    margin-bottom: 27px;
+  }
+  @include media-breakpoint-down('md') {
+    padding-top: 61px;
+    text-align: center;
+    .brand-logo {
+      margin-bottom: 60px;
+    }
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-down('md') {
+      flex-wrap: wrap;
+      .footer-link, .footer-menu, .footer-form {
+        width: 100%;
+      }
+    }
+    .footer-link {
+      h6 {
+        margin-bottom: 15px;
+        span {
+          opacity: .6;
+        }
+      }
+      .social-links {
+        display: flex;
+        @include media-breakpoint-down('md') {
+          justify-content: center;
+        }
+      }
+    }
+    .footer-menu {
+      list-style-type: none;
+      padding-left: 0;
+      @include media-breakpoint-down('md') {
+        margin: 40px 0;
+      }
+      .nav-item {
+        .nav-link {
+          color: $white;
+          font-size: 18px;
+          // @include heading-font();
+          font-family: $font-family-dosis;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .footer-form {
+      max-width: 371px;
+      @include media-breakpoint-down('md') {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h6 {
+        margin-bottom: 18px;
+      }
+      p {
+        margin-bottom: 23px;
+      }
+      .sign-up {
+        display: flex;
+        @include media-breakpoint-down('sm') {
+          display: block;
+          .arrow-link {
+            justify-content: center;
+          }
+        }
+        input {
+          width: 255px;
+          @include media-breakpoint-down('md') {
+            width: 100%;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navigation-opened {
+  .site-footer {
+    display: none;
+  }
+}

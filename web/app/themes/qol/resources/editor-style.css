@@ -1,0 +1,18 @@
+.btn-success {
+  color: white !important;
+}
+.btn-success[data-mce-selected='inline-boundary'] {
+  background-color: #258F75 !important;
+  padding: 7px 12px !important;
+}
+h2 {
+  font-size: 34px !important;
+}
+h3 {
+  font-size: 20px !important;
+}
+
+.arrow-link[data-mce-selected='inline-boundary']:after {
+  top: 2px;
+  right: -32px;
+}

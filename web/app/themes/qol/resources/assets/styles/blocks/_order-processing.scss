@@ -1,0 +1,39 @@
+.order-processing-block {
+  padding-top: 69px;
+  padding-bottom: 68px;
+  background: url('../img/backgrounds/hexagon.png') repeat;
+  border-bottom-right-radius: 50px;
+  @include media-breakpoint-down('md') {
+    padding-top: 42px;
+    padding-bottom: 30px;
+  }
+  .processing-image {
+    img {
+      width: 100%;
+      height: auto;
+      margin-left: -60px;
+      @include media-breakpoint-down('md') {
+        margin-left: 0;
+        margin-bottom: 28px;
+      }
+    }
+  }
+  .order-processing {
+    .title {
+      // @include heading-font();
+      font-family: $font-family-pharma;
+      margin-bottom: 26px;
+    }
+    .content {
+      line-height: 28px;
+      margin-bottom: 26px;
+      font-weight: $font-weight-light;
+    }
+    .actions {
+      width: 179px;
+    }
+    .arrow-link {
+      width: 100%;
+    }
+  }
+}
